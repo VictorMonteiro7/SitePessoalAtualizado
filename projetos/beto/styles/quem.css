@@ -1,0 +1,66 @@
+#quem {
+  background: var(--verde);
+  width: 100%;
+}
+.quemContent {
+  grid-column: 1/12;
+  display: flex;
+  padding: 43px 0 79px 0;
+}
+.quemLeft {
+  flex: 1;
+}
+.quemRight {
+  max-width: 36.1875rem;
+  width: 100%;
+  color: var(--preto);
+}
+.quemRight h2:not(:first-child) {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.quemRight p {
+  line-height: 33.44px;
+}
+
+.quemRight p:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 475px) {
+  .quemContent {
+    grid-column: 2/12;
+    flex-direction: column;
+  }
+  .quemLeft h2:not(:first-child) {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+  }
+  .quemLeft {
+    text-align: center;
+  }
+  .quemLeft h2.mobile {
+    margin: 0 auto;
+    display: block;
+  }
+  .quemLeft p.mobile {
+    margin-top: 11px;
+    margin-bottom: 17px;
+    justify-content: center;
+  }
+  .quemRight {
+    max-width: 17.4375rem;
+    padding-right: 1rem;
+  }
+
+  .quemLeft > picture > img {
+    width: 100%;
+    transform: translateX(-15px);
+  }
+  .quemRight p:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}

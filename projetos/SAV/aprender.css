@@ -1,0 +1,56 @@
+#aprender {
+  padding-top: 6.875rem;
+}
+
+.aprenderContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aprenderContainer > h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.aprenderItens {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.aprenderItens > div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.aprenderItens picture img {
+  display: block;
+  padding: 10px;
+}
+.aprenderItens h2 {
+  font-weight: 300;
+  padding: 10px 17px;
+}
+.aprenderContainer > a.btn.laranja {
+  margin-top: 50px;
+}
+
+@media (max-width: 480px) {
+  #aprender {
+    padding-top: 3.125rem;
+    padding-bottom: 5.125rem;
+  }
+  .aprenderItens {
+    grid-template-columns: 1fr;
+  }
+  .aprenderItens > div {
+    flex-direction: column;
+  }
+  .aprenderItens h2 {
+    font-size: 0.9375rem;
+    text-align: center;
+    line-height: 1.59375rem;
+  }
+  .aprenderContainer > h2 {
+    padding: 0 10px;
+  }
+}

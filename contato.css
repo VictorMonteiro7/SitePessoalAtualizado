@@ -1,0 +1,160 @@
+#contato {
+  background: var(--preto);
+  padding-top: 174px;
+}
+
+.contatoContainer {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  display: flex;
+  padding: 0 172px 0 143px;
+  margin-bottom: 56px;
+}
+
+#contato .socialContainer {
+  margin-bottom: unset;
+  margin: 0 auto;
+}
+
+.contatoLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contatoText {
+  position: relative;
+  top: -20%;
+}
+.contatoText h2 {
+  color: var(--prata);
+  width: 372px;
+}
+.contatoText > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contatoText > div p.text {
+  color: var(--branco);
+  margin-left: 10px;
+}
+
+.contatoText > div:nth-child(2) {
+  margin-top: 4rem;
+}
+.contatoText > div:nth-child(3) {
+  margin-top: 1rem;
+}
+
+.contatoRight {
+  width: 21.25rem;
+  min-height: 400px;
+  background: var(--roxo);
+  padding: 30px 40px 40px 40px;
+}
+
+.contatoRight form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contatoRight h2 {
+  text-align: center;
+  color: var(--azulEscuro);
+}
+
+.contatoRight form input,
+.contatoRight form textarea {
+  width: 16.25rem;
+  height: 54px;
+  margin-top: 15px;
+  padding-left: 1rem;
+  font-size: 14px;
+  color: var(--preto);
+}
+.contatoRight form textarea {
+  resize: none;
+  height: 75px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  word-wrap: break-word;
+}
+.contatoRight form textarea::placeholder {
+  color: #838383;
+}
+.msgErro {
+  font-size: 0.875rem;
+  color: var(--branco);
+  background-color: red;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  transition: 0.3s;
+}
+@keyframes showError {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
+@keyframes closeError {
+  from {
+    opacity: initial;
+    transform: initial;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+.contatoRight form input::placeholder {
+  padding-left: 1rem;
+  font-size: 14px;
+  color: #818181;
+}
+
+.contatoRight form .button {
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.contatoRight form .button img {
+  margin-right: 10px;
+}
+
+@media (max-width: 728px) {
+  #contato {
+    padding-bottom: 3rem;
+  }
+  .contatoContainer {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .contatoText h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .contatoRight {
+    margin: 5rem auto;
+  }
+  .contatoRight form .button img {
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+  }
+  .contatoRight form .button {
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+}

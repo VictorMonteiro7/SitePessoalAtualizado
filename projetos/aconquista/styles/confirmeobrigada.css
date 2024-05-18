@@ -1,0 +1,164 @@
+#confirme {
+  background: url('../assets/img/fundopreto.jpg');
+  width: 100%;
+  background-size: cover;
+}
+.confirmeContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 58px;
+}
+
+.confirmeContainer > picture {
+  margin-bottom: 62px;
+}
+.confirmeText {
+  display: flex;
+  max-width: 823px;
+  width: 100%;
+  margin-bottom: 59px;
+  justify-content: space-between;
+}
+
+.confirmeText .textRight span {
+  font-style: italic;
+}
+.confirmeText .textRight p {
+  line-height: 31.8px;
+}
+
+.textLeft {
+  max-width: 409px;
+}
+
+.textLeft > p {
+  text-align: center;
+  line-height: 31.8px;
+}
+.textLeft > p span {
+  color: var(--dourado);
+}
+
+.textRight {
+  text-align: center;
+  border: 1px solid var(--dourado);
+  padding: 13px 27px 0 32px;
+  max-width: 376px;
+}
+.confirmeContainer > p {
+  max-width: 441px;
+  text-align: center;
+}
+.confirmeContainer > p span {
+  font-weight: 700;
+}
+
+.acesso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 63px;
+}
+
+.acesso > p {
+  max-width: 387px;
+  text-align: center;
+  margin-top: 27.18px;
+  margin-bottom: 19px;
+  line-height: 29.9px;
+}
+
+.icons {
+  display: flex;
+  width: 100%;
+  max-width: 223px;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.icons a img {
+  width: 40px;
+  height: 40px;
+}
+#confirme .content > a {
+  text-decoration: none;
+  color: var(--dourado);
+  font-family: var(--serif);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: lowercase;
+  margin-top: 261px;
+  margin-bottom: 21px;
+  font-size: 20px;
+}
+#confirme .content > a img {
+  margin-right: 15px;
+}
+
+@media (max-width: 480px) {
+  .confirmeContainer > picture {
+    margin-bottom: 18px;
+  }
+  #wppObrigada {
+    height: unset;
+  }
+
+  .textLeft > p {
+    padding: 0 32px;
+  }
+
+  .confirmeContainer {
+    padding-top: 40px;
+  }
+  .wppLeft > * {
+    padding: unset;
+  }
+  .wppLeft > h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .wppLeft > p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  a.btnWpp {
+    padding-left: 33px;
+    width: 341px;
+  }
+  a.btnWpp img {
+    margin-right: 32px;
+  }
+
+  .textRight {
+    margin-top: 24px;
+    padding: 13px 9px 24px 14px;
+  }
+  .confirmeText .textRight p {
+    padding: 0 2rem;
+  }
+  .confirmeText {
+    flex-direction: column;
+    margin-bottom: 22px;
+  }
+  .confirmeContainer > p {
+    padding: 0 2rem;
+    line-height: 27.54px;
+  }
+  .acesso > p {
+    padding: 0 3rem;
+  }
+  #confirme .content > a {
+    margin-top: 114px;
+  }
+  .wppContainer {
+    flex-direction: column;
+  }
+}

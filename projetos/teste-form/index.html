@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de formulário</title>
+    <script>window.l2bConfig = { token: 'ODc2ZmYxMWQtNzNiMS00YzUxLWFiMTktZDhiYjA1NmMzN2Rk', workerUrl: 'https://js-stage.app.leads2b.com' };</script>
+    <script name="leads2b" src="https://js-stage.app.leads2b.com/latest" defer></script>
+    <style>
+      /* Estilização geral da página */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* Estilização do formulário */
+      form {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        width: 100%;
+      }
+
+      /* Estilização das linhas do formulário */
+      .bee-form-row {
+        margin-bottom: 20px;
+      }
+
+      /* Estilização dos campos de entrada */
+      .bee-field input[type='text'],
+      .bee-field input[type='email'],
+      .bee-field input[type='checkbox'],
+      .bee-field input[type='radio'] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+
+      .bee-field input[type='checkbox'],
+      .bee-field input[type='radio'] {
+        width: auto;
+        margin-right: 10px;
+      }
+
+      /* Estilização dos rótulos */
+      .bee-field label {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 8px;
+        display: block;
+      }
+
+      /* Estilização das opções inline */
+      .bee-inline-field .bee-form-option-wrapper {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 15px;
+      }
+
+      /* Estilização do botão */
+      .bee-button-container button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+      }
+
+      .bee-button-container button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Responsividade */
+      @media (max-width: 768px) {
+        form {
+          padding: 20px;
+        }
+
+        .bee-inline-field .bee-form-option-wrapper {
+          margin-right: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      accept-charset="UTF-8"
+      autocomplete="on"
+      enctype="multipart/form-data"
+      method="post"
+      target="_self"
+    >
+      <div class="bee-form-row">
+        <div class="bee-field bee-field-r0c0m0i1">
+          <label for="r0c0m0i1">Email</label
+          ><input id="r0c0m0i1" name="email" type="email" required="" />
+        </div>
+      </div>
+      <div class="bee-form-row">
+        <div class="bee-field bee-field-r0c0m0i2">
+          <label for="r0c0m0i2">Nome</label
+          ><input id="r0c0m0i2" name="name" type="text" />
+        </div>
+      </div>
+      <div class="bee-form-row">
+        <div class="bee-field bee-field-r0c0m0i3 bee-inline-field">
+          <span class="bee-form-choices-wrapper"
+            ><label for="r0c0m0i3">Qual fruta você prefere?</label
+            ><span class="bee-form-options-horizontal-orientation-wrapper"
+              ><span class="bee-form-option-wrapper"
+                ><input
+                  id="r0c0m0i3_1"
+                  type="checkbox"
+                  name="field_1[]"
+                  value="Banana"
+                /><label class="inline" for="r0c0m0i3_1"
+                  >&nbsp;Banana</label
+                ></span
+              ><span class="bee-form-option-wrapper"
+                ><input
+                  id="r0c0m0i3_2"
+                  type="checkbox"
+                  name="field_1[]"
+                  value="Maça"
+                /><label class="inline" for="r0c0m0i3_2"
+                  >&nbsp;Maça</label
+                ></span
+              ></span
+            ></span
+          >
+        </div>
+      </div>
+      <div class="bee-form-row">
+        <div class="bee-field bee-field-r0c0m0i4">
+          <label for="r0c0m0i4">Deixe seu feedback aqui!</label><input
+          id="r0c0m0i4" name="deixe_seu_feedback_aqui_" type="text"
+          placeholder="Clique em " editar"="" para="" alterar="" o="" tipo=""
+          de="" campo"="">
+        </div>
+      </div>
+      <div class="bee-form-row">
+        <div class="bee-field bee-field-r0c0m0i5 bee-inline-field">
+          <span class="bee-form-choices-wrapper"
+            ><label for="r0c0m0i5">Qual música você gosta?</label
+            ><span class="bee-form-options-horizontal-orientation-wrapper"
+              ><span class="bee-form-option-wrapper"
+                ><input
+                  id="r0c0m0i5_1"
+                  type="radio"
+                  name="field_3"
+                  value="Evidências"
+                /><label class="inline" for="r0c0m0i5_1"
+                  >&nbsp;Evidências</label
+                ></span
+              ><span class="bee-form-option-wrapper"
+                ><input
+                  id="r0c0m0i5_2"
+                  type="radio"
+                  name="field_3"
+                  value="São amores"
+                /><label class="inline" for="r0c0m0i5_2"
+                  >&nbsp;São amores</label
+                ></span
+              ></span
+            ></span
+          >
+        </div>
+      </div>
+      <div class="bee-form-row">
+        <div class="bee-field bee-field-r0c0m0i6">
+          <label for="r0c0m0i6"> </label>
+          <div class="bee-button-container">
+            <button
+              id="r0c0m0i6"
+              name="submit"
+              value="Inscrever-se"
+              style="cursor: pointer"
+            >
+              Inscrever-se
+            </button>
+          </div>
+        </div>
+      </div>
+      <input
+        value="c0c9f790-b103-4a93-a496-95431ac7b4b8"
+        type="hidden"
+        name="uuid"
+      />
+    </form>
+  </body>
+</html>

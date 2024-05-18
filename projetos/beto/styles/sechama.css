@@ -1,0 +1,82 @@
+#sechama {
+  background: var(--verde);
+  width: 100%;
+}
+.sechamaContent {
+  grid-column: 2/12;
+  display: flex;
+}
+.sechamaLeft {
+  flex: 1;
+}
+
+.sechamaLeft > picture img {
+  display: block;
+  object-fit: contain;
+}
+
+.sechamaRight {
+  max-width: 33.125rem;
+  width: 100%;
+  padding-top: 61px;
+  color: var(--preto);
+}
+.sechamaRight h2:nth-child(2) {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sechamaRight > p {
+  max-width: 33.125rem;
+  width: 100%;
+  margin-top: 28px;
+  margin-bottom: 46px;
+  color: var(--preto);
+}
+.sechamaRight > p span {
+  text-transform: uppercase;
+}
+
+.sechamaContent .btn {
+  max-width: 14.375rem;
+  width: 100%;
+  margin-bottom: 68px;
+}
+
+@media (max-width: 475px) {
+  .sechamaContent {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .sechamaRight h2 {
+    text-align: center;
+  }
+  .sechamaRight > p {
+    max-width: 14.375rem;
+    margin: 0 auto;
+  }
+  .sechamaRight h2:nth-child(2) {
+    margin-bottom: 12px;
+  }
+  .sechamaContent .btn {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sechamaLeft {
+    margin-bottom: 20px;
+  }
+  .sechamaRight {
+    padding-top: 26px;
+  }
+  .sechamaContent .btn {
+    margin-bottom: 50px;
+  }
+  .sechamaRight > p.mobile:nth-child(5) {
+    margin-bottom: 2rem;
+  }
+  .sechamaLeft > picture img {
+    position: relative;
+    left: 2rem;
+  }
+}

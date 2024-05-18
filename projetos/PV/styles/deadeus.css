@@ -1,0 +1,79 @@
+#deadeus {
+  background: #000;
+  width: 100%;
+  padding: 54px 0;
+  position: relative;
+}
+.deadeusContainer {
+  width: 100%;
+}
+.deadeusContainer ul {
+  max-width: 769px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+.deadeusContainer ul li {
+  color: #fff;
+  font-family: var(--mrModern);
+  font-size: 23px;
+  line-height: 24.15px;
+  font-weight: 300;
+}
+.deadeusContainer ul li:nth-child(2) {
+  margin: 1rem 0;
+}
+.deadeusContainer > h1 {
+  margin: 0 auto;
+  color: var(--dourado);
+  text-align: center;
+  margin-bottom: 25px;
+}
+.deadeusContainer .durante {
+  height: 524px;
+  background: url('../assets/img/judurante.jpg');
+  background-repeat: no-repeat;
+  padding-top: 142px;
+}
+.deadeusContainer .durante p {
+  max-width: 388px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 21px;
+  line-height: 27.51px;
+  padding-right: 10px;
+  transform: translateX(-12.1rem);
+}
+.deadeusContainer .durante p span {
+  color: var(--dourado);
+  font-weight: 700;
+}
+@media (max-width: 480px) {
+  #deadeus {
+    padding: 38px 0 0 0;
+  }
+  .deadeusContainer > h1 {
+    font-size: 23px;
+  }
+  .deadeusContainer ul {
+    max-width: 287px;
+    padding: 0 1rem;
+    transform: translateX(10px);
+  }
+  .deadeusContainer ul li {
+    font-size: 19px;
+    line-height: 21.85px;
+  }
+  .deadeusContainer .durante {
+    height: unset;
+    padding: unset;
+    margin-top: 35px;
+  }
+  .deadeusContainer .durante p {
+    transform: unset;
+    max-width: 342px;
+    font-size: 19px;
+    line-height: 24.89px;
+    margin-bottom: 35px;
+  }
+}

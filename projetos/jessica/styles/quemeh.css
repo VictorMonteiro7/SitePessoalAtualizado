@@ -1,0 +1,37 @@
+.quemEhContainer {
+  max-width: 55rem;
+  width: 100%;
+}
+.quemEhContainer > h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.quemEhContainer img {
+  display: block;
+}
+.quemEhContainer > div > div.left p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.quemEhContainer > div.second {
+  flex-direction: row-reverse;
+}
+.quemEhContainer > div.second > div.left {
+  padding-top: 3rem;
+}
+.quemEhContainer > div.second > div.right img {
+  transform: rotateY(180deg);
+}
+.quemEhContainer > div.second > div.left a,
+.quemEhContainer > div.mobile > div.left a {
+  background: var(--Verde);
+  color: #f1f1f1;
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  .quemEhContainer {
+    max-width: 28rem;
+  }
+  .quemEhContainer img {
+    width: 100%;
+  }
+}

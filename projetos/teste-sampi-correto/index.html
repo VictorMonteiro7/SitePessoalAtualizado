@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste Sampi</title>
+    <script>window.l2bConfig = { token: 'ODc2ZmYxMWQtNzNiMS00YzUxLWFiMTktZDhiYjA1NmMzN2Rk', workerUrl: 'https://js-stage.app.leads2b.com' };</script>
+    <script name="leads2b" src="https://js-stage.app.leads2b.com/latest" defer></script>
+    <style>
+      /* Estilização geral da página */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* Estilização do formulário */
+      form#sampiMultiStepForm {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        width: 100%;
+      }
+
+      /* Estilização das etapas */
+      .step {
+        display: none;
+      }
+
+      .step.active {
+        display: block;
+      }
+
+      /* Estilização dos rótulos */
+      form label {
+        font-weight: bold;
+        margin-bottom: 8px;
+        display: block;
+        color: #333;
+      }
+
+      /* Estilização dos campos de entrada */
+      form input[type='text'],
+      form input[type='email'],
+      form input[type='checkbox'],
+      form input[type='radio'],
+      form select,
+      form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+
+      form input[type='checkbox'],
+      form input[type='radio'] {
+        width: auto;
+        margin-right: 10px;
+      }
+
+      form textarea {
+        resize: none;
+        height: 100px;
+      }
+
+      /* Estilização dos botões */
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      button.prev {
+        background-color: #6c757d;
+      }
+
+      button.prev:hover {
+        background-color: #5a6268;
+      }
+
+      /* Estilização dos botões de navegação */
+      .navigation-buttons {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      /* Responsividade */
+      @media (max-width: 768px) {
+        form#sampiMultiStepForm {
+          padding: 20px;
+        }
+
+        button {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        .navigation-buttons {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form id="sampiMultiStepForm">
+      <!-- Seção 1 - Informações Básicas -->
+      <div class="step active">
+        <label>Nome</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Nome Completo"
+
+        />
+        <label>E-mail corporativo</label>
+        <input
+          type="email"
+          name="email_corporativo"
+          placeholder="E-mail Corporativo"
+
+        />
+        <label>Nome da empresa</label>
+        <input
+          type="text"
+          name="nome_empresa"
+          placeholder="Nome da Empresa"
+
+        />
+        <label>Cargo</label>
+        <input type="text" name="cargo" placeholder="Cargo" />
+        <label>Instagram ou site da empresa</label>
+        <input
+          type="text"
+          name="instagram_site"
+          placeholder="Instagram ou site da empresa"
+
+        />
+        <button type="button" class="next">Próximo</button>
+      </div>
+
+      <!-- Seção 2 - Perfil da Empresa -->
+      <div class="step">
+        <label>Tamanho da empresa</label>
+        <select name="tamanho_empresa">
+          <option value="">Tamanho da Empresa</option>
+          <option value="0-10">0-10</option>
+          <option value="11-50">11-50</option>
+          <option value="51-200">51-200</option>
+          <option value="200+">200+</option>
+        </select>
+        <label>Setor de atuação</label>
+        <select name="setor_atuacao">
+          <option value="">Setor de Atuação</option>
+          <option value="Financeiro">Financeiro</option>
+          <option value="Mídia">Mídia</option>
+          <option value="Jurídico">Jurídico</option>
+          <option value="Outros">Outros</option>
+        </select>
+
+        <div class="field-group">
+          <label>Principal Desafio:</label><br />
+          <label style="display: flex; width: 100%"
+            ><input
+              type="checkbox"
+              name="desafio[]"
+              value="Publicação automatizada"
+            />&nbsp; Publicação automatizada de conteúdo</label
+          >
+          <label style="display: flex; width: 100%"
+            ><input
+              type="checkbox"
+              name="desafio[]"
+              value="Monitoramento de dados"
+            />&nbsp; Monitoramento e análise de dados</label
+          >
+          <label style="display: flex; width: 100%"
+            ><input
+              type="checkbox"
+              name="desafio[]"
+              value="Geração de insights"
+            />&nbsp; Geração de insights estratégicos</label
+          >
+          <label style="display: flex; width: 100%"
+            ><input type="checkbox" name="desafio[]" value="Outro" />&nbsp;
+            Outro</label
+          >
+          <input type="text" name="desafio_outro" placeholder="Se outro, qual?" />
+        </div>
+        <div class="navigation-buttons">
+          <button type="button" class="prev">Voltar</button>
+          <button type="button" class="next">Próximo</button>
+        </div>
+      </div>
+
+      <!-- Seção 3 - Necessidade e Interesse -->
+      <div class="step">
+        <label>O que você busca com a sampi?</label>
+        <textarea
+          name="objetivo_sampi"
+          placeholder="O que você busca com a Sampi?"
+
+        ></textarea>
+
+        <div class="field-group">
+          <label>Já utiliza alguma ferramenta?</label>
+          <label style="display: flex; width: 100%"
+            ><input type="radio" name="usa_ferramenta" value="Sim" />
+            Sim</label
+          >
+          <label style="display: flex; width: 100%"
+            ><input type="radio" name="usa_ferramenta" value="Não" />
+            Não</label
+          >
+          <input type="text" name="qual_ferramenta" placeholder="Se sim, qual?" />
+        </div>
+        <label>Em quanto tempo pretende implementar uma solução?</label>
+        <select name="tempo_implementacao">
+          <option value="">Tempo para Implementação</option>
+          <option value="Imediato">Imediato</option>
+          <option value="1-3 meses">1-3 meses</option>
+          <option value="3-6 meses">3-6 meses</option>
+          <option value="Apenas conhecendo">Apenas conhecendo</option>
+        </select>
+
+        <div class="navigation-buttons">
+          <button type="button" class="prev">Voltar</button>
+          <button>Enviar</button>
+        </div>
+      </div>
+    </form>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const steps = document.querySelectorAll('.step');
+        const nextButtons = document.querySelectorAll('.next');
+        const prevButtons = document.querySelectorAll('.prev');
+        let currentStep = 0;
+
+        // Função para mostrar a etapa atual
+        const showStep = (index) => {
+          steps.forEach((step, i) => {
+            step.classList.toggle('active', i === index);
+          });
+        };
+
+        // Evento para avançar para a próxima etapa
+        nextButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            if (currentStep < steps.length - 1) {
+              currentStep++;
+              showStep(currentStep);
+            }
+          });
+        });
+
+        // Evento para voltar para a etapa anterior
+        prevButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            if (currentStep > 0) {
+              currentStep--;
+              showStep(currentStep);
+            }
+          });
+        });
+
+        // Inicializa mostrando a primeira etapa
+        showStep(currentStep);
+      });
+    </script>
+  </body>
+</html>

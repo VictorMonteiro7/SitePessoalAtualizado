@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --preto: #1b1b1c;
+  --azulEscuro: #170f1b;
+  --roxo: #847df4;
+  --corIcone: #252350;
+  --prata: #bbc5ea;
+  --branco: #fff;
+  --bgBtn: #201e41;
+  --maxWidth: 72rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h1.title {
+  font-size: 3.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p.title {
+  font-size: 0.875rem;
+}
+
+p.text {
+  font-size: 0.875rem;
+  width: 18.4375rem;
+  line-height: 1.5;
+}
+
+#container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-snap-type: block mandatory;
+  scroll-padding: 0px 0px 0px 0px;
+  position: relative;
+}
+#container > section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
+.button {
+  max-width: 16.25rem;
+  width: 100%;
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--prata);
+  background: var(--bgBtn);
+}
+
+@media (max-width: 728px) {
+  html {
+    font-size: 83.33%;
+  }
+}

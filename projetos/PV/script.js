@@ -1,0 +1,3 @@
+initVideos();
+initSlide();
+initAulas();

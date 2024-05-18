@@ -1,0 +1,27 @@
+#necessario {
+  background: var(--prata);
+  width: 100%;
+}
+.necessarioContent {
+  grid-column: 3/11;
+  display: flex;
+  justify-content: center;
+  padding: 87px 0 102px 0;
+  color: var(--preto);
+}
+
+.necessarioContent > h1 {
+  font-weight: 300;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+@media (max-width: 475px) {
+  .necessarioContent {
+    grid-column: 2/12;
+    padding: 42px 0 47px 0;
+  }
+  .necessarioContent > h1 {
+    padding: unset;
+  }
+}

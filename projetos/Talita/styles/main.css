@@ -1,0 +1,90 @@
+main {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > .content {
+  padding: 144px 0 157px 0;
+}
+main > .garantia {
+  display: flex;
+  padding: 33px 0;
+  max-width: 810px;
+  width: 100%;
+  justify-content: space-around;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -75px;
+}
+main > .garantia > div {
+  display: flex;
+  flex-direction: column;
+  max-width: 214px;
+  position: relative;
+}
+main > .garantia > div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -1.1875rem;
+  top: -15px;
+  width: 1px;
+  background: var(--white);
+  height: calc(100% + 30px);
+}
+main > .garantia > div > div {
+  display: flex;
+  align-items: center;
+}
+main > .garantia > div > div > img {
+  max-width: 22px;
+  width: 100%;
+  margin-right: 10px;
+}
+main > .garantia > div > small {
+  margin-top: 11px;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 35px;
+}
+.mainContainer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mainContainer > .mainLeft {
+  max-width: 388px;
+  width: 100%;
+}
+.mainContainer > .mainLeft > h3 {
+  margin: 48px 0 28px 0;
+  max-width: 337px;
+  width: 100%;
+  place-self: flex-end;
+}
+.mainContainer > .mainLeft > a.btn {
+  width: 100%;
+  margin-bottom: 15.25px;
+}
+.mainContainer > .mainRight {
+  flex: 1;
+}
+.mainRight > .videoArea {
+  max-width: 559px;
+  border-radius: 11px;
+}
+.mainRight > .videoArea > .videoContent {
+  z-index: 2;
+}
+.mainRight > .videoArea > picture {
+  position: absolute;
+  top: -85px;
+  right: -50px;
+  z-index: 1;
+}
