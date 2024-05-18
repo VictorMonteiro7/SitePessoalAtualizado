@@ -1,0 +1,79 @@
+#faq {
+  width: 100%;
+  padding: 121px 0;
+}
+.faqContainer {
+  width: 100%;
+}
+.faqContainer > h1 {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 58px;
+}
+.accordion-body {
+  max-width: 642px;
+  margin: 0 auto;
+}
+
+.accordion {
+  width: 100%;
+  color: black;
+  background-color: white;
+}
+
+.accordion .container {
+  position: relative;
+  margin: 10px 10px;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 16px 0 16px 15px;
+}
+
+.accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+.accordion .label p {
+  font-weight: 700;
+}
+.accordion .label::before {
+  content: url("../assets/img/icon-arrow.svg");
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  font-size: 30px;
+  transform: translateY(-50%);
+  transition: 0.3s linear;
+}
+
+.accordion .content {
+  position: relative;
+  height: 0;
+  font-size: 20px;
+  width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+  transition: 0.5s;
+  display: flex;
+  align-items: flex-start;
+  max-width: 472px;
+}
+
+.accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+
+.accordion .container.active .content {
+  padding: 60px 0;
+  justify-content: center;
+}
+
+.accordion .container.active .label::before {
+  transform: translateY(-50%) rotate(90deg);
+}

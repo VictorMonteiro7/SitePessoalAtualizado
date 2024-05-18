@@ -1,0 +1,29 @@
+#termino {
+  background: var(--branco);
+  padding: 100px 0;
+}
+.terminoContainer {
+  width: 100%;
+}
+.terminoContainer > div {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.terminoContainer > div a.btn.laranja {
+  margin-top: 4.5rem;
+}
+@media (max-width: 480px) {
+  #termino {
+    padding-top: 60px;
+  }
+  .terminoContainer h2 {
+    font-size: 0.9375rem;
+    line-height: 25.5px;
+    text-align: center;
+    padding: 0 21px;
+  }
+}

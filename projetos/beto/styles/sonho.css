@@ -1,0 +1,80 @@
+#sonho {
+  background: var(--preto);
+  width: 100%;
+}
+
+.sonhoContent {
+  grid-column: 2/12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linha {
+  width: 1px;
+  background: var(--dourado);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 157.68px;
+}
+.linha::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--dourado);
+}
+
+.linha:nth-child(3)::after {
+  bottom: unset;
+  top: -5px;
+}
+
+.sonhoText {
+  color: var(--branco);
+  margin: 29px 0 34px 0;
+  max-width: 33.25rem;
+  width: 100%;
+  text-align: center;
+}
+.sonhoText p {
+  line-height: 28.5px;
+}
+.sonhoText p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.textoDourado {
+  color: var(--branco);
+  border: 2px solid var(--dourado);
+  padding: 51px 151px;
+  margin-bottom: 82px;
+  width: 100%;
+}
+.textoDourado > p {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+.textoDourado > p span {
+  color: var(--dourado);
+}
+
+@media (max-width: 475px) {
+  .linha {
+    height: 72px;
+  }
+  .sonhoText p {
+    padding: 0 11px;
+  }
+  .textoDourado {
+    padding: 30px;
+    margin-bottom: 40px;
+  }
+  .textoDourado > p {
+    text-align: left;
+  }
+}

@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --Montserrat: 'Montserrat', sans-serif;
+  --Roboto: 'Roboto', sans-serif;
+  --vinho: #824848;
+  --branco: #fff;
+  --preto: #000;
+  --botaoBG: linear-gradient(140deg, #ffd1b2 0%, #946342 100%);
+  --box-gradient: linear-gradient(180deg, #cf7171 0%, #824848 100%);
+  --laranja: linear-gradient(180deg, #e49c6b 0%, #cc895c 100%);
+  --maxDesk: 71.25rem;
+  --laranjaVenda: linear-gradient(180deg, #eca16f 0%, #cc895c 100%);
+  --bgQuem: linear-gradient(180deg, #dd996c 0%, #cc895c 100%);
+}
+
+html {
+  font-family: var(--Montserrat);
+}
+ul,
+li {
+  list-style: none;
+}
+h1 {
+  font-size: 1.375rem;
+}
+h1.title {
+  font-size: 2.1875rem;
+  line-height: 2.1875rem;
+  font-weight: 300;
+  color: var(--vinho);
+  max-width: 450px;
+}
+h1.title span {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 2.125rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+}
+
+h3.menor {
+  font-size: 1.0625rem;
+  line-height: 1.80625rem;
+  font-weight: 500;
+  color: var(--vinho);
+  max-width: 550px;
+  padding-right: 120px;
+}
+
+.flex {
+  display: flex !important;
+}
+
+p {
+  font-size: 0.9375rem;
+  line-height: 1.59375rem;
+}
+a {
+  text-decoration: none;
+}
+.content {
+  max-width: var(--maxDesk);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  background: var(--botaoBG);
+  padding: 20px 40px;
+  height: 38px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.3125rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn.laranja {
+  text-shadow: 0 0 10px rgb(0 0 0 / 30%);
+  color: var(--branco);
+  font-size: 1.125rem;
+  border-radius: 5px;
+  height: 58px;
+  display: inline-block;
+  margin-bottom: 1.125rem;
+}
+
+footer {
+  height: 48px;
+  background: var(--laranja);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.mobile {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  img {
+    width: 100%;
+  }
+  .mobile {
+    display: flex !important;
+  }
+  .desktop {
+    display: none !important;
+  }
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer p {
+    font-size: 14px;
+  }
+}

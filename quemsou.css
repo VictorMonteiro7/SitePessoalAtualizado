@@ -1,0 +1,38 @@
+#quemSou {
+  background: var(--azulEscuro);
+  padding-top: 218px;
+  padding-bottom: 124px;
+}
+
+.quemSouContainer {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.quemSouRight {
+  max-width: 29.875rem;
+  position: relative;
+  margin-right: 10.4375rem;
+}
+
+.quemSouText :is(p.title, h1.title) {
+  color: var(--prata);
+}
+
+.quemSouText p.text {
+  width: 29.875rem;
+  margin-top: 20px;
+  color: var(--branco);
+}
+
+@media (max-width: 728px) {
+  .quemSouContainer {
+    flex-direction: column;
+    margin: 0 5%;
+  }
+  .quemSouText * {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,235 @@
+#aula {
+  width: 100%;
+  padding-top: 64px;
+  padding-bottom: 67px;
+}
+#aula .content {
+  max-width: 1175px;
+}
+.aulaContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.aulaLeft {
+  max-width: 816px;
+  width: 100%;
+}
+
+.aulaLeft > .videoArea {
+  max-width: 815.72px;
+  width: 100%;
+  height: 458.92px;
+}
+.aulaLeft > .videoArea .videoContent {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 56.25%;
+}
+.aulaLeft > .videoArea .videoContent picture {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.aulaLeft > .videoArea .videoContent picture img:first-child {
+  width: 100%;
+}
+.aulaLeft > .videoArea .videoContent picture svg {
+  position: absolute;
+  left: 43%;
+  top: 40%;
+  width: 93px;
+  height: 92px;
+}
+.aulaLeft > .videoArea:hover .videoContent picture svg .fundo {
+  transition: 0.1s linear;
+}
+.aulaLeft > .videoArea:hover .videoContent picture svg .fundo {
+  fill: red;
+}
+
+.aulaLeftTexto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #c08d4c;
+  padding-bottom: 57.85px;
+}
+.aulaLeftTexto > h1 {
+  font-size: 23px;
+  color: #000;
+  margin-top: 30.43px;
+  text-align: center;
+  margin-bottom: 15.26px;
+}
+.aulaLeftTexto > p {
+  text-align: center;
+  max-width: 605.63px;
+  width: 100%;
+  color: #000;
+  padding: 0 2rem;
+  margin-bottom: 27.15px;
+  line-height: 29.9px;
+}
+
+.btnAulas {
+  max-width: 480px;
+  width: 100%;
+  height: 33.35px;
+  background: #cf0000;
+  box-shadow: 0px 3.78645px 3.78645px rgb(0 0 0 / 25%);
+  border-radius: 12.1734px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--mrModern);
+  font-size: 19px;
+}
+.btnAulas > img {
+  margin-right: 4.76px;
+}
+
+.aulaRight {
+  max-width: 340.6px;
+  width: 100%;
+}
+
+.aulaRight > div {
+  max-width: 342.14px;
+  width: 100%;
+  display: flex;
+  background: #fff;
+  padding: 14.67px 0 16.99px 9.27px;
+  border-bottom: 1px solid #000;
+}
+.aulaRight > div:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.aulaRight > div.ativo {
+  background: #c08d4c;
+}
+.aulaRight > div picture img {
+  width: 144.43px;
+  height: 144.43px;
+  background: #000;
+  object-fit: contain;
+  display: block;
+}
+.aulaRightText {
+  max-width: 1174px;
+  width: 100%;
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aulaRightText .first {
+  font-family: var(--serif);
+  color: #000;
+  font-weight: 300;
+  font-size: 15.45px;
+  margin-bottom: 5.09px;
+}
+.aulaRightText .first span {
+  font-family: var(--mrModern);
+  color: #cf0000;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.ativo .aulaRightText .first span {
+  font-weight: 700;
+  font-family: var(--mrModern);
+  font-size: 13px;
+  color: #fff;
+}
+.aulaRightText .second {
+  font-weight: 700;
+  font-family: var(--serif);
+  color: #000;
+  font-size: 15.45px;
+  text-transform: capitalize;
+  margin-bottom: 5.72px;
+  padding-right: 1rem;
+}
+.aulaRightText .third {
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+  font-family: var(--mrModern);
+  line-height: 14.84px;
+  padding-right: 6px;
+}
+.aulaRightText .btnAulas {
+  max-width: 161.42px;
+  font-size: 15.45px;
+  box-shadow: 0px 3.08932px 3.08932px rgba(0, 0, 0, 0.25);
+  border-radius: 9.92997px;
+  height: 26.26px;
+}
+.aulaRightText .btnAulas[disabled] {
+  background: #ccc;
+  cursor: not-allowed;
+}
+.videoArea iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 480px) {
+  #aula {
+    padding-bottom: 53px;
+  }
+  .aulaContainer img {
+    width: unset;
+  }
+  .aulaContainer {
+    flex-direction: column;
+    max-width: 382px;
+    align-items: center;
+  }
+  .aulaLeft > .videoArea {
+    height: 214px;
+  }
+  .aulaLeftTexto > h1 {
+    font-size: 20px;
+  }
+  .aulaLeftTexto > p {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0 3rem;
+  }
+  .btnAulas {
+    font-size: 17px;
+    padding: 1.3rem 1rem;
+    text-align: center;
+    max-width: 300px;
+  }
+  .btnAulas > img {
+    margin-right: 9.56px;
+  }
+  .aulaLeftTexto {
+    padding-bottom: 37px;
+    margin-bottom: 43px;
+  }
+  .aulaLeft > .videoArea .videoContent picture svg {
+    width: 48.12px;
+    height: 49px;
+  }
+  .aulaRightText .third {
+    font-size: 13.13px;
+    line-height: 13.92px;
+    padding-right: 1rem;
+  }
+}

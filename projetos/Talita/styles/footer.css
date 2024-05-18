@@ -1,0 +1,28 @@
+footer {
+  height: 103px;
+}
+footer > div {
+  margin: 0 auto;
+  column-gap: 158px;
+}
+footer > div > div {
+  column-gap: 50px;
+}
+
+footer > div > p {
+  position: relative;
+}
+footer > div > p::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 300%;
+  background-color: var(--dCoral);
+  top: -100%;
+  right: -79px;
+}
+
+footer > div > div a {
+  color: var(--white);
+  text-decoration: none;
+}

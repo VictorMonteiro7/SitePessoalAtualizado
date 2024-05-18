@@ -1,0 +1,60 @@
+#wpp {
+  width: 100%;
+  padding-top: 44px;
+  padding-bottom: 41.85px;
+  background: #cf0000;
+  z-index: 2;
+}
+.wppContainer {
+  max-width: 359px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.wppContainer h1 {
+  text-align: center;
+  font-size: 23px;
+  line-height: 29px;
+  color: #f9f9f9;
+}
+.wppContainer a {
+  width: 320px;
+  height: 43.71px;
+  background: #00c364;
+  border-radius: 10.6865px;
+  filter: drop-shadow(0px 4.51508px 4.51508px rgba(0, 0, 0, 0.25));
+  font-size: 19px;
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--mrModern);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.wppContainer a img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+@media (max-width: 480px) {
+  #wpp {
+    padding-bottom: 35px;
+  }
+  .wppContainer h1 {
+    font-size: 20px;
+    line-height: 25.6px;
+  }
+  .wppContainer a {
+    width: 254px;
+    font-size: 15px;
+    height: 34px;
+  }
+  .wppContainer a img {
+    width: 22px;
+    height: 22px;
+  }
+}
