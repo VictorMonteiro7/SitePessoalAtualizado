@@ -1,0 +1,82 @@
+#presente {
+  background: var(--verde);
+  width: 100%;
+}
+.presenteContent {
+  padding-top: 52px;
+  padding-bottom: 55px;
+  grid-column: 2/12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--preto);
+}
+.presenteContentText {
+  display: flex;
+  margin-bottom: 61px;
+  width: 100%;
+}
+.presenteLeft {
+  text-align: right;
+  text-transform: uppercase;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.presenteLeft h1 {
+  max-width: 18.75rem;
+  width: 100%;
+}
+.presenteRight {
+  max-width: 27.875rem;
+  width: 100%;
+  transform: translateX(-3rem);
+}
+
+.presenteRight p {
+  line-height: 33.44px;
+}
+
+.presenteRight > p:first-child {
+  margin-bottom: 2rem;
+  padding-right: 6rem;
+}
+
+.presenteRight span.bonus {
+  text-transform: uppercase;
+  display: block;
+}
+.presenteContent .btn {
+  max-width: 25.25rem;
+  width: 100%;
+}
+
+@media (max-width: 475px) {
+  .presenteContentText {
+    flex-direction: column;
+    margin-bottom: 49px;
+  }
+  .presenteContent {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 37px;
+  }
+  .presenteLeft h1 {
+    text-align: center;
+    padding: 0 19px;
+    margin-bottom: 19px;
+  }
+
+  .presenteRight {
+    transform: unset;
+  }
+  .presenteRight > p:last-child {
+    padding-right: 3rem;
+  }
+  .presenteContent .btn {
+    max-width: 15.25rem;
+  }
+  .presenteRight > p:first-child {
+    padding-right: unset;
+  }
+}

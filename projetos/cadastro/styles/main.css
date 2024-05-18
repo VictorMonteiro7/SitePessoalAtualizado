@@ -1,0 +1,141 @@
+main {
+  background: url('../assets/mainbg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 6rem;
+  overflow-y: hidden;
+}
+
+.mainContent {
+  display: flex;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.mainLeft,
+.mainRight {
+  flex: 1;
+}
+
+.mainLeft {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 999;
+}
+
+.leftContent {
+  width: 385px;
+  position: relative;
+  left: 3rem;
+  top: 2rem;
+}
+
+.leftContent h1,
+.leftContent h2 {
+  margin-bottom: 1rem;
+}
+
+.leftContent h1 {
+  text-align: center;
+}
+
+.leftContent h2 {
+  padding-left: 21px;
+}
+
+.leftContent form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.leftContent form input {
+  width: 90%;
+  height: 29px;
+  border-radius: 3px;
+  font-family: var(--mrModern);
+  background: var(--branco);
+  outline: none;
+  font-size: 1.25rem;
+  padding-left: 10px;
+  border: none;
+}
+
+.leftContent form .btn {
+  margin-top: 1.9375rem;
+}
+
+.leftContent form input:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+
+.mainRight {
+  position: relative;
+}
+
+.rightImg {
+  background: url('../assets/jumain.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: absolute;
+  top: -13rem;
+  height: 0;
+  padding-bottom: 100%;
+  transform: scale(1.5);
+  right: 4rem;
+}
+
+@media (max-width: 480px) {
+  main {
+    overflow-x: hidden;
+    background: url('../assets/jornadafundo.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 6rem;
+    overflow-y: hidden;
+  }
+
+  main .content picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .content picture img {
+    width: 80%;
+  }
+
+  .mainContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftContent {
+    width: 17.5rem;
+    top: unset;
+    left: unset;
+  }
+  .leftContent form input {
+    font-size: 1rem;
+  }
+  .leftContent h2 {
+    text-align: center;
+    padding-left: unset;
+  }
+  .mainRight {
+    flex: unset;
+    width: var(--maxDesk);
+    height: 0;
+    padding-bottom: 100%;
+  }
+  .rightImg {
+    right: 2.3rem;
+    top: 1rem;
+    transform: scale(1.5);
+  }
+}

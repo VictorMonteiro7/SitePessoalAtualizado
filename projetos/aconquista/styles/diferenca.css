@@ -1,0 +1,130 @@
+#diferenca {
+  width: 100%;
+  background: #000;
+  padding-top: 5rem;
+}
+
+.diferencaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diferencaContainer h1:first-child {
+  margin-bottom: 6px;
+  font-family: var(--serif);
+  font-weight: 400;
+  text-transform: inherit;
+}
+.diferencaContainer h1.title {
+  font-family: var(--serif);
+  text-transform: unset;
+  font-weight: 300;
+}
+.diferencaContainer > p {
+  margin-top: 8px;
+}
+
+.coroaEVarinha {
+  max-width: 26.25rem;
+  width: 100%;
+  height: 215.69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13px;
+}
+.coroaEVarinha div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diferencaContainer > .texto {
+  max-width: 38.125rem;
+  width: 100%;
+  border: 1px solid var(--dourado);
+  padding: 17px 30px 17px 29px;
+  text-align: center;
+  margin-top: 47px;
+}
+.diferencaContainer > .texto span {
+  font-weight: 700;
+}
+.diferencaContainer > .texto p {
+  line-height: 25.1px;
+}
+.varinha {
+  position: relative;
+  height: 100%;
+}
+
+.coroa h2,
+.varinha h2 {
+  color: var(--dourado);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+}
+.coroa h2 {
+  margin-top: 21.47px;
+}
+.varinha h2 {
+  transform: translateY(-31px);
+}
+.coroa p,
+.varinha p {
+  text-align: center;
+  text-transform: uppercase;
+}
+.coroa span,
+.varinha span {
+  font-weight: 700;
+}
+.coroa p {
+  margin-top: 15px;
+  padding: 0 4px;
+}
+.varinha p {
+  transform: translateY(-18px);
+}
+
+@media (max-width: 480px) {
+  #diferenca {
+    padding-top: 0;
+    margin: -2rem 0;
+  }
+  .diferencaContainer h1:first-child {
+    margin-bottom: 10px;
+  }
+  .diferencaContainer > p {
+    margin-top: 14px;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  .coroaEVarinha {
+    max-width: 18.625rem;
+  }
+
+  .varinha {
+    transform: translateX(15px);
+  }
+
+  .coroaEVarinha > picture img {
+    transform: scale(0.8) translateX(3px);
+  }
+  .varinha h2 {
+    transform: translateY(-27px);
+  }
+  .varinha p {
+    transform: translateY(-12px);
+  }
+
+  .diferencaContainer > .texto {
+    max-width: 22.625rem;
+    padding: 11px 15px 12px 15px;
+    line-height: 21.5px;
+  }
+}

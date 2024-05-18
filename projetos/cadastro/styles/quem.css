@@ -1,0 +1,106 @@
+#quem {
+  background: var(--corPele);
+  padding-top: 4rem;
+  padding-bottom: 13.875rem;
+}
+
+.quemContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.quemContent > h1 {
+  margin-bottom: 3.25rem;
+}
+
+.quemBox {
+  display: flex;
+  width: 100%;
+}
+
+.quemBox div {
+  flex: 1;
+}
+
+.quemLeft {
+  background: url('../assets/jufinal.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  left: 1rem;
+}
+
+.quemRight h1 {
+  margin-bottom: 1.25rem;
+}
+
+.quemText {
+  padding-right: 1rem;
+}
+
+.quemRight p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+a.btn {
+  text-decoration: none;
+  background: var(--vinho);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 108px;
+  width: unset;
+  padding: 0 2rem;
+  filter: drop-shadow(-1px 8px 18px rgba(0, 0, 0, 0.42));
+  box-shadow: 0px 0px 25px -2px #dd9b1b;
+}
+
+span {
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  #quem {
+    padding: 3.25rem 0 5.25rem 0;
+  }
+  .quemContent > h1 {
+    text-align: center;
+  }
+  .quemContent > h1 {
+    margin-bottom: 2.1875rem;
+  }
+  .quemBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quemLeft {
+    flex: unset;
+    width: 100%;
+    left: unset;
+    margin-bottom: 1.8125rem;
+    transform: scale(0.8);
+  }
+  .quemImg {
+    flex: unset !important;
+    padding-bottom: 100%;
+  }
+  .quemRight h1 {
+    text-align: center;
+  }
+
+  .quemRight p {
+    text-align: center;
+    font-size: 1.0625rem;
+  }
+
+  .quemText {
+    padding: 0 17px;
+  }
+
+  a.btn {
+    margin-top: 3.1875rem;
+  }
+}

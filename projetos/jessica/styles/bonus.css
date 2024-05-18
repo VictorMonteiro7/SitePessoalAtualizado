@@ -1,0 +1,103 @@
+#bonus {
+  padding: 5rem 0;
+}
+.bonusContainer {
+  max-width: 31.25rem;
+  background-color: var(--Pastel);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0.003px rgb(0 0 0 / 30%);
+  margin-top: 2rem;
+  position: relative;
+}
+.bonusContainer > div {
+  width: 95%;
+  height: 98%;
+  border: 1px dashed #0e0e0e;
+  position: absolute;
+  top: 10px;
+  border-radius: 5px;
+}
+.bonusContainer > picture img {
+  object-fit: contain;
+  display: block;
+  max-width: 9.375rem;
+  transform: translateY(-1rem);
+}
+.bonusContainer ul {
+  list-style-type: none;
+  max-width: 80%;
+  margin-top: -1rem;
+}
+.bonusContainer > :nth-child(3) {
+  border-bottom: 1px dashed #0e0e0e;
+}
+.bonusContainer ul li {
+  margin-bottom: 1rem;
+}
+.bonusContainer ul li p {
+  position: relative;
+  font-size: 1rem;
+}
+.bonusContainer ul li p::before {
+  content: '';
+  display: inline-block;
+  margin-right: 5px;
+  width: 1rem;
+  height: 1rem;
+  background: url('../img/icons/verified.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bonusContainer > h2 {
+  margin: 1rem 0;
+}
+.bonusContainer > :last-child {
+  margin: 1rem 0;
+}
+#bonus > .content > ul {
+  margin: 1rem 0;
+  list-style-type: none;
+}
+#bonus > .content > ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+#bonus > .content > ul li p::before {
+  width: 10px;
+  height: 10px;
+  content: '';
+  display: inline-block;
+  margin-right: 5px;
+  background: #0e0e0e;
+}
+#bonus > .content > ul li p del {
+  font-style: italic;
+}
+#bonus > .content > h1:nth-child(3) {
+  margin-top: 1rem;
+  text-align: center;
+}
+#bonus > .content > h1:nth-child(5) span {
+  color: var(--Verde);
+}
+
+#bonus > .content > h3 {
+  font-weight: 300;
+  font-style: italic;
+  color: var(--Verde);
+  margin-top: -0.5rem;
+  text-align: center;
+}
+#bonus > .content > a.btn {
+  background: var(--Verde);
+  color: #fefefe;
+  margin-top: 2rem;
+}
+
+@media (max-width: 480px) {
+  .bonusContainer {
+    max-width: 28rem;
+  }
+  #bonus > .content > ul {
+    max-width: 28rem;
+  }
+}

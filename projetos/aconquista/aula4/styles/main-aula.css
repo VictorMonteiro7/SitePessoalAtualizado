@@ -1,0 +1,112 @@
+#fundo {
+  background: url('../../assets/img/fundotextura.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+main {
+  width: 100%;
+}
+main .content {
+  max-width: 1175px;
+}
+.mainContainer {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+.mainContainerNav {
+  justify-content: center;
+}
+.mainContainerNav picture img:last-child {
+  transform: translateX(2rem);
+}
+.mainContainerNav,
+.mainContainerNav > picture:first-child,
+.mainContainerNav .cronograma {
+  display: flex;
+  align-items: center;
+}
+.mainContainerNav .cronograma {
+  justify-content: center;
+  position: relative;
+  transform: translateX(2rem);
+}
+.mainContainerNav .cronograma .aula {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 29px;
+  position: relative;
+}
+.aula:not(:last-child)::after {
+  content: '';
+  display: block;
+  max-width: 63px;
+  width: 100%;
+  height: 1px;
+  background: var(--dourado);
+  position: absolute;
+  top: 15px;
+  right: -46px;
+}
+.mainContainerNav .cronograma .aula h2 {
+  font-size: 19px;
+  color: var(--dourado);
+  font-family: var(--serif);
+  margin-top: 13.54px;
+}
+.mainContainerNav .cronograma .aula p {
+  font-size: 1rem;
+  margin-top: 3.69px;
+}
+.mainContainerNav .cronograma .separadorAulas {
+  width: 29.54px;
+  height: 1px;
+  background: var(--dourado);
+}
+.mainContainer img {
+  display: block;
+}
+.separador img {
+  margin: -15px 0;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  main {
+    padding-top: 25px;
+  }
+  .mainContainerNav,
+  .mainContainerNav > picture:first-child {
+    flex-direction: column;
+  }
+  .cronograma {
+    margin-bottom: 24px;
+  }
+  .mainContainer .aula img {
+    width: 32px;
+    height: 32px;
+  }
+  .mainContainer .aula:last-child {
+    margin-right: unset;
+  }
+  .separador img {
+    max-width: 382px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4px;
+    margin-bottom: unset;
+  }
+  .mainContainerNav picture img:last-child {
+    transform: unset;
+  }
+  .mainContainerNav .cronograma {
+    transform: unset;
+  }
+}

@@ -1,0 +1,85 @@
+#quando {
+  width: 100%;
+  background: #000;
+  padding-top: 4rem;
+}
+.quandoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.quandoContainer > h1 {
+  margin-top: 37px;
+  margin-bottom: 29px;
+  font-family: var(--serif);
+}
+
+.aulasArea {
+  display: grid;
+  margin-top: 2rem;
+  max-width: 38.4375rem;
+  grid-gap: 59px 74px;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 60px;
+}
+
+.quandoTexto {
+  display: flex;
+  max-width: 40.1875rem;
+  width: 100%;
+  align-items: center;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 34px 25px 45px 0;
+  margin-bottom: 58px;
+}
+.quandoTexto > .textoLeft > h2 {
+  font-size: 1.5rem;
+  text-align: right;
+  line-height: 29.88px;
+  color: var(--dourado);
+  margin-right: 15px;
+}
+.quandoTexto > .textoLeft > h2 span {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.quandoTexto > .textoRight p.data {
+  font-size: 4.5rem;
+  font-family: var(--serif);
+  font-style: italic;
+}
+@media (max-width: 480px) {
+  #quando {
+    padding-top: unset;
+  }
+  .aulasArea {
+    grid-template-columns: 1fr;
+    grid-gap: unset;
+    max-width: 14.0625rem;
+  }
+  .quandoContainer > p {
+    padding: 0 3.3rem;
+    text-align: center;
+  }
+  .quandoTexto {
+    flex-direction: column;
+    padding: 13px 0 13px 0;
+    margin-bottom: 39px;
+    max-width: 321px;
+  }
+  .quandoTexto > .textoLeft > h2 {
+    text-align: center;
+    font-size: 1.125rem;
+    margin: unset;
+    padding: 0 1rem;
+  }
+  .quandoTexto > .textoRight p.data {
+    font-size: 3.125rem;
+  }
+}

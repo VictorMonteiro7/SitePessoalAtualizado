@@ -1,0 +1,29 @@
+#venda {
+  background: var(--laranjaVenda);
+  height: 10.875rem;
+  margin-top: -1rem;
+}
+#venda .content {
+  height: inherit;
+}
+
+.vendaContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.vendaContainer h2 {
+  color: var(--branco);
+}
+
+@media (max-width: 480px) {
+  #venda {
+    margin-top: unset;
+  }
+  .vendaContainer h2 {
+    text-align: center;
+    font-size: 1rem;
+  }
+}

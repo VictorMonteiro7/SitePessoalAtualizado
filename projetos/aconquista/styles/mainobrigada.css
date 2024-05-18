@@ -1,0 +1,83 @@
+main {
+  background: url('../assets/img/jumainobrigada.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 469px;
+  padding-top: 123px;
+}
+.mainContainer {
+  width: 100%;
+}
+.mainLeft {
+  max-width: 472px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+  transform: translateX(3rem);
+}
+
+.mainLeft > picture.mobile {
+  display: none;
+}
+
+.mainLeft h1 {
+  color: var(--dourado);
+  font-family: var(--serif);
+  font-weight: 300;
+}
+.mainLeft p.dourado {
+  text-align: center;
+  padding: 0 7rem;
+  line-height: 25.1px;
+}
+.mainLeft p:last-child {
+  max-width: 373px;
+  width: 100%;
+  line-height: 25px;
+  transform: translateY(-20px);
+  text-align: justify;
+}
+.mainLeft p:last-child span {
+  color: var(--dourado);
+}
+.mobile {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  main {
+    background: url('../assets/img/fundopreto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 36px;
+  }
+  .mobile {
+    display: flex !important;
+  }
+  .mainLeft {
+    transform: unset;
+  }
+  .mainLeft > picture.mobile {
+    display: block;
+  }
+  .mainLeft > picture.mobile img {
+    margin-top: -3rem;
+  }
+  .mainLeft h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+  .mainLeft p.dourado {
+    font-size: 20px;
+    padding: unset;
+    text-transform: uppercase;
+    padding: 0 2rem;
+  }
+  .mainLeft p:last-child {
+    font-size: 18px;
+    max-width: 283px;
+    text-align: center;
+  }
+}
