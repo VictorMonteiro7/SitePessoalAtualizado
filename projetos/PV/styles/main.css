@@ -1,0 +1,92 @@
+main {
+  background: url('../assets/img/mainimg-desktop-min.jpeg');
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 95px;
+  padding-bottom: 65px;
+}
+.mainContainer {
+  width: 100%;
+}
+
+.mainContainer > .texto {
+  max-width: 452px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transform: translateX(6rem);
+}
+
+.mainContainer > .texto picture img {
+  width: 100%;
+}
+.mainContainer > .texto h2:nth-child(2) {
+  padding: 0 1rem;
+  line-height: 35.25px;
+  margin-top: 23.42px;
+}
+.mainContainer > .texto h1 {
+  max-width: 351px;
+  width: 100%;
+  color: var(--dourado);
+  line-height: 36.3px;
+  margin: 40px 0 32px 0;
+}
+
+.mainContainer > .texto .btn {
+  background: #dd9b1b;
+  box-shadow: 0px 0px 25px -2px #dd9b1b;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #45010d;
+  font-family: var(--mrEaves);
+  font-size: 25px;
+}
+
+.mainContainer > .texto h2:last-child {
+  font-style: italic;
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  main {
+    background-color: #000;
+    background-image: url('../assets/img/capamobile.jpg');
+    background-position: center;
+    min-height: 1076px;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: unset;
+  }
+  .mainContainer > .texto picture img {
+    width: 353.09px;
+  }
+  .mainContainer > .texto {
+    transform: unset;
+  }
+  .mainContainer > .texto h2:nth-child(2) {
+    font-size: 23.4px;
+    line-height: 33px;
+    margin-bottom: 408px;
+  }
+  .mainContainer > .texto h1 {
+    max-width: 309.38px;
+    line-height: 32px;
+    /* padding: 0 3rem; */
+    font-size: 26.44px;
+    margin-bottom: 28.21px;
+  }
+  .mainContainer > .texto .btn {
+    max-width: 275.89px;
+    height: 33.49px;
+    font-size: 22.04px;
+  }
+  .mainContainer > .texto h2:last-child {
+    font-size: 22.04px;
+  }
+}

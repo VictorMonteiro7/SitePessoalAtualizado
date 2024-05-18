@@ -1,0 +1,135 @@
+#quem {
+  background: var(--bgQuem);
+  padding-top: 190px;
+}
+.quemContainer {
+  width: 100%;
+}
+.quemUm.flex {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.quemUm.flex .quemLeft {
+  flex: 1;
+}
+.quemUm.flex .quemLeft div {
+  max-width: 570px;
+  color: var(--branco);
+}
+.quemUm.flex .quemLeft h1.title {
+  color: var(--branco);
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+.quemUm.flex .quemLeft h2 {
+  max-width: 350px;
+  margin-bottom: 1.25rem;
+}
+.quemUm.flex .quemLeft p {
+  max-width: 450px;
+  text-align: justify;
+  margin-bottom: 25.5px;
+  font-weight: 400;
+}
+
+.quemUm.flex .quemLeft span {
+  font-weight: 700;
+}
+.quemUm.flex .quemRight {
+  flex: 1;
+}
+.quemUm.flex .quemRight picture {
+  display: flex;
+  justify-content: flex-end;
+}
+.quemUm.flex .quemRight picture img {
+  max-width: 450px;
+  transform: translate(6rem, -1rem);
+}
+
+.quemContainer img {
+  width: 100%;
+  display: block;
+}
+
+.quemDois.flex {
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 6.25rem;
+}
+.quemDois.flex .quemLeft picture img {
+  max-width: 350px;
+}
+.quemDois.flex .quemLeft picture {
+  display: flex;
+  justify-content: flex-start;
+}
+.quemDois.flex .quemLeft,
+.quemDois.flex .quemRight {
+  flex: 1;
+}
+.quemDois.flex .quemRight {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quemDois.flex .quemRight div {
+  color: var(--branco);
+  max-width: 450px;
+  text-align: justify;
+}
+.quemDois.flex .quemRight div p span {
+  font-weight: 700;
+}
+.quemDois.flex .quemRight div p:not(:first-child) span {
+  text-transform: uppercase;
+}
+.quemDois.flex .quemRight a {
+  font-size: 1.125rem;
+  color: #bd7f55;
+  padding: 20px 40px;
+  background: var(--branco);
+  font-weight: 700;
+  display: inline-block;
+  border-radius: 5px;
+  height: 58px;
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  #quem {
+    padding-top: 50px;
+  }
+  .quemUm.flex .quemRight picture img {
+    transform: unset;
+  }
+  .quemUm.flex .quemLeft picture.mobile img {
+    transform: translateX(3rem);
+    max-width: 334px;
+    margin-bottom: 1rem;
+  }
+  .quemUm.flex .quemLeft h2 {
+    margin: 0 auto 1.25rem auto;
+    text-align: center;
+  }
+  .quemUm.flex .quemLeft h1.title {
+    text-align: center;
+  }
+  .quemUm.flex {
+    margin-bottom: unset;
+  }
+  .quemDois.flex {
+    margin-top: unset;
+  }
+  .quemDois.flex .quemRight a {
+    margin-top: 30px;
+  }
+  .quemContainer {
+    overflow: hidden;
+  }
+  .quemRight > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

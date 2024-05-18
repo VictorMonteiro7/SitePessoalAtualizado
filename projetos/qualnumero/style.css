@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "seven_segmentregular";
+  src: url("./assets/fonts/sevensegment-webfont.woff2") format("woff2"),
+    url("./assets/fonts/sevensegment-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bgColor: linear-gradient(180deg, #eeeeee 0%, #ffffff 100%);
+  --orangeGrandient: linear-gradient(180deg, #ef6c00 0%, #c0661c 100%);
+  --white: #fff;
+  --orange: #ff6600;
+  --success: #32bf00;
+  --error: #cc3300;
+  --newGame: linear-gradient(180deg, #434854 0%, #9e9e9e 100%);
+  --disabledColorBtn: #ddd;
+  --disabledColorInput: #f5f5f5;
+  --disabledInputBorder: #cfcfcf;
+  --gray: #cfcfcf;
+  --inputText: #222;
+  --Montserrat: "Montserrat", sans-serif;
+  --Roboto: "Roboto", sans-serif;
+  --Seven: "seven_segmentregular";
+}
+body {
+  background-color: var(--bgColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+main {
+  max-width: 26.4375rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h1 {
+  font-family: var(--Montserrat);
+  color: var(--orange);
+  font-size: 2.125rem;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4.5rem;
+}
+main h1::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  bottom: -21px;
+  height: 1px;
+  background: var(--gray);
+}
+
+.numberContent {
+  max-width: 15.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.numberContent.success :is(.msg, .number) {
+  color: var(--success);
+}
+.numberContent.error :is(.msg, .number) {
+  color: var(--error);
+}
+
+.msg {
+  margin-bottom: 2.125rem;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  font-family: var(--Montserrat);
+  color: var(--orange);
+}
+
+.btn {
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 0 13px 0;
+  font-family: var(--Roboto);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+  border: none;
+}
+.newGame {
+  background: var(--newGame);
+  padding-left: 6px;
+  padding-right: 10px;
+  width: 130px;
+  height: 42px;
+  margin-bottom: 4.875rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+}
+.newGame > img {
+  display: block;
+  margin-right: 2px;
+}
+
+.newGame.active {
+  display: flex;
+  pointer-events: unset;
+  animation: fadeIn 0.3s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.number {
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+  height: 8.4375rem;
+  line-height: 8.4375rem;
+  font-family: var(--Seven);
+  font-size: 14.5rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 70px;
+  column-gap: 11px;
+  width: 298px;
+}
+form input {
+  padding-left: 12px;
+  font-family: var(--Roboto);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--inputText);
+  border: 1px solid var(--orange);
+  outline: none;
+}
+form .btn {
+  background: var(--orangeGrandient);
+}
+
+form[disabled] .btn,
+form .btn[disabled] {
+  background: var(--disabledColorBtn);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+form[disabled] input {
+  background: var(--disabledColorInput);
+  border-color: var(--disabledInputBorder);
+  cursor: not-allowed;
+  pointer-events: none;
+  color: var(--disabledColorInput);
+}
+
+.success {
+  color: var(--success) !important;
+}
+.error {
+  color: var(--error) !important;
+  text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 70.5881%;
+  }
+  body {
+    min-height: unset;
+    padding-top: 62px;
+  }
+  main h1 {
+    margin-bottom: 96px;
+  }
+  .msg {
+    margin-bottom: 35px;
+  }
+  .number {
+    margin-bottom: 56px;
+  }
+}

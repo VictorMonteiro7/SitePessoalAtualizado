@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementor form</title>
+    <script>window.l2bConfig = { token: 'ODc2ZmYxMWQtNzNiMS00YzUxLWFiMTktZDhiYjA1NmMzN2Rk', workerUrl: 'https://js-stage.app.leads2b.com' };</script>
+    <script name="leads2b" src="https://js-stage.app.leads2b.com/latest" defer></script>
+  </head>
+  <style>
+    /* Estilização geral do formulário */
+    .elementor-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-family: Arial, sans-serif;
+    }
+
+    /* Estilização dos campos de entrada */
+    .elementor-field {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    .elementor-field:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    /* Estilização dos rótulos */
+    .elementor-field-label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Estilização dos botões */
+    .elementor-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .elementor-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Estilização dos checkboxes */
+    .elementor-field-option {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .elementor-field-option input[type='checkbox'] {
+      margin-right: 8px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .elementor-form {
+        padding: 15px;
+      }
+
+      .elementor-field-group {
+        width: 100%;
+      }
+    }
+  </style>
+  <body>
+    <form class="elementor-form" method="post" name="New Form">
+      <input type="hidden" name="post_id" value="2831" />
+      <input type="hidden" name="form_id" value="3d73895" />
+      <input
+        type="hidden"
+        name="referer_title"
+        value="Espera Fórmula da Aprovação"
+      />
+
+      <input type="hidden" name="queried_id" value="2831" />
+
+      <div class="elementor-form-fields-wrapper elementor-labels-above">
+        <div
+          class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required"
+        >
+          <input
+            size="1"
+            type="email"
+            name="form_fields[email]"
+            id="form-field-email"
+            class="elementor-field elementor-size-md elementor-field-textual"
+            placeholder="Insira seu melhor e-mail:"
+            required="required"
+            aria-required="true"
+          />
+        </div>
+        <div
+          class="elementor-field-type-number elementor-field-group elementor-column elementor-field-group-numero elementor-col-50 elementor-field-required"
+        >
+          <input
+            type="number"
+            name="form_fields[numero]"
+            id="form-field-numero"
+            class="elementor-field elementor-size-md elementor-field-textual"
+            placeholder="WhatsApp com DDD"
+            required="required"
+            aria-required="true"
+            min=""
+            max=""
+          />
+        </div>
+        <div
+          class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50 elementor-field-required"
+        >
+          <input
+            size="1"
+            type="text"
+            name="form_fields[name]"
+            id="form-field-name"
+            class="elementor-field elementor-size-md elementor-field-textual"
+            placeholder="Insira seu nome"
+            required="required"
+            aria-required="true"
+          />
+        </div>
+        <div
+          class="elementor-field-type-checkbox elementor-field-group elementor-column elementor-field-group-turma elementor-col-100"
+        >
+          <label for="form-field-turma" class="elementor-field-label">
+            Você está na repescagem ou ainda vai fazer a 1ª fase?
+          </label>
+          <div class="elementor-field-subgroup">
+            <span class="elementor-field-option"
+              ><input
+                type="checkbox"
+                value="1ª Fase"
+                id="form-field-turma-0"
+                name="form_fields[turma][]"
+              />
+              <label for="form-field-turma-0">1ª Fase</label></span
+            ><span class="elementor-field-option"
+              ><input
+                type="checkbox"
+                value="Repescagem"
+                id="form-field-turma-1"
+                name="form_fields[turma][]"
+              />
+              <label for="form-field-turma-1">Repescagem</label></span
+            >
+          </div>
+        </div>
+        <div
+          class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons"
+        >
+          <button type="submit" class="elementor-button elementor-size-sm">
+            <span>
+              <span class="elementor-button-icon"> </span>
+              <span class="elementor-button-text">FAZER PRÉ INSCRIÇÃO!</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

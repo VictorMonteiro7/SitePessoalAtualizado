@@ -1,0 +1,46 @@
+#venda {
+  background: #45010d;
+  width: 100%;
+  padding-top: 47px;
+  padding-bottom: 55px;
+}
+.vendaContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.vendaContainer h1 {
+  color: var(--dourado);
+  font-size: 35.91px;
+  line-height: 42.92px;
+  max-width: 432px;
+  width: 100%;
+}
+.vendaContainer p {
+  font-weight: 700;
+  max-width: 481px;
+  width: 100%;
+  line-height: 30.82px;
+  margin-top: 15px;
+}
+
+@media (max-width: 480px) {
+  #venda {
+    padding-top: 30px;
+    padding-bottom: 32px;
+  }
+  .vendaContainer h1 {
+    font-size: 25px;
+    line-height: 29.88px;
+    max-width: 355px;
+  }
+  .vendaContainer p.mobile {
+    display: block !important;
+    line-height: 23.75px;
+    max-width: 252px;
+    padding: 0 1rem;
+  }
+}

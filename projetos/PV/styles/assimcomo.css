@@ -1,0 +1,27 @@
+#assimcomo {
+  padding-top: 35px;
+  padding-bottom: 39px;
+  width: 100%;
+  background: #fff;
+}
+.assimcomoContainer {
+  width: 100%;
+}
+.assimcomoContainer p {
+  color: #000;
+  line-height: 29.9px;
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+.assimcomoContainer p span {
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .assimcomoContainer p {
+    padding: 0 21px;
+  }
+}

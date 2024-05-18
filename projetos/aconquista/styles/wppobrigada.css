@@ -1,0 +1,42 @@
+#wppObrigada {
+  width: 100%;
+  height: 236px;
+  background: var(--dourado);
+}
+.wppContainer {
+  display: flex;
+  max-width: 818px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 55px 0 60px 0;
+  align-items: center;
+}
+.wppContainer div {
+  flex: 1;
+}
+.wppLeft > * {
+  color: #000;
+  text-align: center;
+  padding: 0 21px;
+}
+a.btnWpp {
+  max-width: 385px;
+  width: 100%;
+  height: 52.59px;
+  background: linear-gradient(183.15deg, #000000 2.61%, #1e1e1e 97.41%);
+  border-radius: 12.8571px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  padding-left: 55px;
+}
+a.btnWpp img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+a.btnWpp p {
+  color: var(--dourado);
+  text-transform: uppercase;
+}
