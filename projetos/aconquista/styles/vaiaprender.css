@@ -1,0 +1,54 @@
+#vaiAprender {
+  background: url('../assets/img/fundopreto.jpg');
+  width: 100%;
+  background-size: cover;
+  background-position: 0;
+  padding-top: 96px;
+}
+.aprenderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aprenderContainer > h1 {
+  font-family: var(--serif);
+}
+.aprenderContainer > h1,
+.aprenderContainer > p {
+  text-align: center;
+}
+.aprenderContainer > p span {
+  text-transform: uppercase;
+}
+
+.aprenderContainer > ul {
+  max-width: 691px;
+  width: 100%;
+  list-style-type: decimal;
+  color: #fff;
+  font-family: var(--mrModern);
+  font-size: 1.25rem;
+  margin-top: 32px;
+  transform: translateX(4rem);
+}
+
+.aprenderContainer > ul li {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+  #vaiAprender {
+    padding-top: 57px;
+    background: #000;
+  }
+  .aprenderContainer > ul {
+    max-width: 16.6875rem;
+    font-size: 1rem;
+    padding-right: 2rem;
+    margin-bottom: 1.5rem;
+    transform: translateX(1rem);
+  }
+  .aprenderContainer > ul li {
+    line-height: 21.5px;
+  }
+}

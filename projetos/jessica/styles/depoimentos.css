@@ -1,0 +1,41 @@
+#depoimentos {
+  background-color: var(--Pastel);
+}
+
+#depoimentos > .content > h1 {
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+}
+
+.depoContainer {
+  max-width: 55rem;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.videoArea {
+  max-width: 25rem;
+  width: 100%;
+  position: relative;
+  margin-bottom: 74px;
+}
+.videoContainer {
+  padding: 0 0 56.25%;
+  position: relative;
+}
+.videoContainer video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 480px) {
+  .depoContainer.flex {
+    align-items: center;
+    max-width: 28rem;
+  }
+}

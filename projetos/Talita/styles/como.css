@@ -1,0 +1,33 @@
+#como {
+  width: 100%;
+  padding: 105px 0 41px 0;
+}
+
+.comoContainer > h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.comoContainer > div {
+  column-gap: 87px;
+  margin-top: 59px;
+}
+.comoContainer > div > div {
+  max-width: 557px;
+}
+.comoContainer > div > div > a.btn {
+  margin-top: 2rem;
+}
+.comoContainer > div > div > p:nth-child(2) {
+  margin: 1rem 0;
+}
+.comoContainer > div > picture {
+  max-width: 346.44px;
+  width: 100%;
+  transform: translateY(-3rem);
+}
+
+.comoContainer > div > picture img {
+  border-radius: 50%;
+  box-shadow: 3rem 3rem 0 var(--dGreen);
+}

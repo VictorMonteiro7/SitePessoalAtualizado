@@ -1,0 +1,57 @@
+#aDieta {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#aDieta > picture img {
+  position: absolute;
+  max-width: 715px;
+  height: 100%;
+  display: block;
+  bottom: -2rem;
+  right: -15%;
+  z-index: 1;
+}
+
+#aDieta .content {
+  margin: unset;
+}
+.aDietaContainer {
+  width: 100%;
+  max-width: 577px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  margin: 61px 0;
+  z-index: 9;
+}
+
+.aDietaContainer > div {
+  position: relative;
+}
+.aDietaContainer > div:not(:nth-last-child(2))::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: -50%;
+  width: 100%;
+  height: 1px;
+  background-color: var(--white);
+}
+
+.aDietaContainer > div > div.flex {
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.aDietaContainer > div > div.flex h3 {
+  font-weight: 700;
+}
+
+.aDietaContainer > div > div.flex img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}

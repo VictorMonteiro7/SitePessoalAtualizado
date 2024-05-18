@@ -1,0 +1,42 @@
+main {
+  background: var(--Pastel);
+  text-align: center;
+  padding-bottom: 5rem;
+}
+main :is(h1.title, h2.subtitle) {
+  padding: 0 6rem;
+}
+main h1.title {
+  margin-bottom: 0.875rem;
+}
+main h2.subtitle {
+  font-weight: 500;
+  padding: 0 14rem;
+}
+main .mainContainer.flexCC > picture:nth-last-child(2) img {
+  max-width: 80%;
+  width: 100%;
+  object-fit: contain;
+}
+main .mainContainer.flexCC > picture:nth-last-child(2) {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main a.btn {
+  background: var(--Verde);
+}
+@media (max-width: 480px) {
+  .mainContainer.flexCC {
+    max-width: 28rem;
+  }
+  .mainContainer :first-child img {
+    width: 160px;
+    height: 160px;
+  }
+  main h1.title {
+    padding: 0;
+  }
+  main h2.subtitle {
+    padding: 0 1rem;
+  }
+}

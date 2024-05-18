@@ -1,0 +1,93 @@
+#recebera {
+  width: 100%;
+  background: #000;
+  padding-top: 106px;
+  padding-bottom: 236px;
+}
+.receberaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.receberaContainer > h1 {
+  font-family: var(--serif);
+  color: var(--dourado);
+  max-width: 28.1875rem;
+  width: 100%;
+  text-align: center;
+  line-height: 35.25px;
+  margin-bottom: 26px;
+}
+
+.receberaContainer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24.41px;
+  max-width: 17.1875rem;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.receberaContainer input,
+.receberaContainer .btn {
+  max-width: 17.1875rem;
+  width: 100%;
+  height: 44.59px;
+  border-radius: 12.86px;
+}
+.receberaContainer input {
+  color: #000;
+  font-family: var(--mrModern);
+  font-size: 1.25rem;
+  padding: 10px 0 10px 36px;
+  margin-bottom: 17.41px;
+}
+.receberaContainer .btn {
+  background: linear-gradient(183.15deg, #a7754e 2.61%, #bc9674 97.41%);
+}
+.receberaContainer .btn p {
+  font-weight: 700;
+}
+.receberaContainer > p:nth-last-child(2) {
+  max-width: 278px;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  #recebera {
+    padding-top: 17px;
+    padding-bottom: 130px;
+  }
+  .receberaContainer > h1 {
+    line-height: 21.15px;
+    padding: 0 3rem;
+    margin-bottom: 12px;
+    margin-top: 0.8rem;
+  }
+  .receberaContainer form {
+    margin-top: 16.84px;
+    margin-bottom: 20.48px;
+  }
+  .receberaContainer > p:nth-last-child(2) {
+    margin-bottom: 15px;
+    max-width: 230px;
+    text-align: justify;
+  }
+  .receberaContainer input,
+  .receberaContainer .btn {
+    max-width: 230.78px;
+    width: 100%;
+    height: 37.42px;
+  }
+  .receberaContainer input {
+    font-size: 0.875rem;
+    padding: unset;
+    padding-left: 15px;
+  }
+  .receberaContainer input {
+    margin-bottom: 14.71px;
+  }
+}

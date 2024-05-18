@@ -1,0 +1,92 @@
+#comQuem {
+  width: 100%;
+  background: url('../assets/img/fundopreto.jpg');
+  background-size: cover;
+  background-position: 0;
+}
+.comQuemContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comQuemContainer > picture > img {
+  transform: translateX(10px);
+}
+.comQuemContainer > h1:first-child {
+  font-family: var(--serif);
+  margin-top: 61px;
+  margin-bottom: 36px;
+}
+
+.comQuemContainer > h1.tk-alana-smooth {
+  font-size: 5rem;
+  font-weight: 300;
+  color: var(--dourado);
+  text-transform: unset;
+  margin-bottom: 42px;
+}
+
+.quemTexto {
+  max-width: 39.375rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quemTexto > p:first-child {
+  line-height: 30.7px;
+  margin-bottom: 29px;
+  text-align: justify;
+}
+.quemTexto > p:not(:first-child) {
+  line-height: 25.6px;
+  text-align: justify;
+}
+.quemTexto > p:not(:first-child) span {
+  font-weight: 700;
+}
+.quemTexto > p:nth-child(3) {
+  margin-top: 25px;
+  margin-bottom: 1rem;
+}
+.quemTexto > p.dourado {
+  margin-top: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .comQuemContainer > h1:first-child {
+    margin-top: 58px;
+    margin-bottom: 19px;
+  }
+  .comQuemContainer > picture img {
+    max-width: 301px;
+    transform: translateX(10px);
+  }
+  .comQuemContainer > h1.tk-alana-smooth {
+    font-size: 2.5rem;
+    margin-bottom: 33px;
+  }
+  .comQuemContainer p {
+    max-width: 281px;
+    width: 100%;
+  }
+  .quemTexto > p:first-child {
+    text-align: justify;
+  }
+  .quemTexto > picture img {
+    max-width: 261px;
+  }
+  .quemTexto > p:not(:first-child) {
+    font-size: 16.78px;
+  }
+  .quemTexto > p:last-child {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0 1rem;
+    margin-top: 33px;
+  }
+}

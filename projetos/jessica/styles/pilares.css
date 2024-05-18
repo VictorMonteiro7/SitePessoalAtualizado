@@ -1,0 +1,93 @@
+.pilaresContainer {
+  max-width: 55rem;
+  width: 100%;
+}
+
+.pilaresContainer h1 {
+  text-align: center;
+}
+.pilaresContainer > h1:first-child {
+  margin-top: 2rem;
+}
+.pilaresContainer > h1 span {
+  color: var(--Verde);
+}
+.pilaresContainer .pilar {
+  padding-top: 2rem;
+}
+.pilaresContainer .pilar .pilarLeft {
+  flex: 1;
+}
+.pilaresContainer .pilar .pilarLeft h1 {
+  border-bottom: 1px solid;
+}
+.pilaresContainer .pilar .pilarText {
+  flex: 3;
+  border-left: 1px solid;
+}
+.pilaresContainer .pilar ul {
+  list-style-type: none;
+  margin-left: 1rem;
+  padding-right: 8rem;
+}
+
+.pilaresContainer .pilar ul li p {
+  position: relative;
+}
+.pilaresContainer .pilar ul li p::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #0e0e0e;
+  display: inline-block;
+  transform: translateY(-3px);
+  margin-right: 5px;
+}
+.pilaresContainer .pilar ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.pilaresContainer .pilar picture img {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+@media (max-width: 480px) {
+  .pilaresContainer {
+    max-width: 28rem;
+  }
+  .pilaresContainer .pilar .pilarLeft h1 {
+    border: none;
+  }
+  .pilaresContainer .pilar picture img {
+    width: 64px;
+    height: 64px;
+    margin-top: 10px;
+  }
+  .pilaresContainer .pilar .pilarLeft {
+    border-bottom: 1px dashed #0e0e0e;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  .pilaresContainer .pilar .pilarText {
+    border: none;
+    margin-bottom: 1rem;
+  }
+  .pilaresContainer .pilar ul {
+    padding-right: 0;
+  }
+  .pilaresContainer .pilar {
+    padding: unset;
+    border: 1px solid #0e0e0e;
+  }
+  .pilaresContainer .pilar:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .pilaresContainer .pilar ul li p {
+    padding: 0 1.8rem;
+  }
+  .pilaresContainer > h1:first-child {
+    margin-bottom: 2rem;
+  }
+}

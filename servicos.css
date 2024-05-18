@@ -1,0 +1,101 @@
+#servicos {
+  background: var(--azulEscuro);
+  padding-top: 93px;
+}
+
+.servicosContainer {
+  max-width: var(--maxWidth);
+  display: flex;
+  margin: 0 auto;
+  padding: 0 84px 0 110px;
+  padding-bottom: 7.875rem;
+  margin-top: 121px;
+}
+
+.servicosLeft {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.servicosLeftContainer {
+  position: relative;
+  top: -20px;
+}
+
+.servicosLeft h1 {
+  color: var(--prata);
+  margin-bottom: 1.75rem;
+}
+.servicosLeft p {
+  color: var(--branco);
+  width: 295px;
+}
+
+.servicosRight {
+  width: 30rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.servicosRight > div {
+  background: var(--preto);
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.servicosRight > div:hover,
+.servicosRight > div:focus {
+  transform: translate(-10px, -10px);
+  background: var(--roxo);
+}
+
+.servicosRight > div svg {
+  stroke: var(--roxo);
+  margin-bottom: 13.33px;
+  transition: 0.3s;
+}
+.servicosRight > div:hover svg,
+.servicosRight > div:focus svg {
+  stroke: var(--preto);
+}
+
+.servicosRight > div p {
+  color: var(--roxo);
+  padding: 0 2rem;
+  text-align: center;
+}
+.servicosRight > div:hover p,
+.servicosRight > div:focus p {
+  color: var(--preto);
+}
+
+@media (max-width: 728px) {
+  #servicos {
+    padding-bottom: 5rem;
+  }
+  .servicosContainer {
+    flex-direction: column;
+    padding: 0 5%;
+    margin: 0;
+  }
+  .servicosLeftContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .servicosLeft p {
+    text-align: center;
+  }
+  .servicosRight {
+    gap: 1rem;
+    width: 25rem;
+    margin: 0 auto;
+  }
+}

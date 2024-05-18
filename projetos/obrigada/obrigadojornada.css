@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --mrEaves: 'mr-eaves-sans', sans-serif;
+  --mrModern: 'mr-eaves-xl-modern', sans-serif;
+  --vinho: #38040d;
+  --dourado: #dd9b1b;
+  --branco: #e5e5e5;
+  --corTexto: #770e2a;
+  --maxDesk: 73.125rem;
+  --corPele: #f4dfe1;
+}
+
+h1 {
+  font-family: var(--mrEaves);
+  font-size: 2.1875rem;
+  text-transform: uppercase;
+  color: var(--branco);
+}
+.vinho {
+  color: var(--corTexto) !important;
+}
+.douradoBg {
+  background: var(--dourado) !important;
+}
+
+.dourado {
+  color: var(--dourado) !important;
+}
+
+h1.sub {
+  text-transform: capitalize;
+}
+h1.textDatas {
+  font-size: 1.726875rem !important;
+}
+
+h2 {
+  font-family: var(--mrModern);
+  font-size: 1.5625rem;
+  color: var(--branco);
+  font-weight: 300;
+}
+
+p {
+  font-family: var(--mrModern);
+  font-family: 1.125rem;
+  color: var(--branco);
+}
+
+.content {
+  max-width: var(--maxDesk);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  width: 90%;
+  height: 38px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.3125rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+footer {
+  height: 48px;
+  background: #c4c4c4;
+}
+
+footer .content {
+  height: inherit;
+}
+
+.footerContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: inherit;
+}
+
+.footerContent p {
+  color: #000;
+  font-size: 1rem;
+}
+
+main {
+  background: url('./assets/mainbg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.logo {
+  background: url('./assets/logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 395px;
+  height: 266px;
+  /* padding-bottom: 100%; */
+}
+
+.main-content {
+  max-width: 40.625rem;
+  width: 100%;
+  text-align: center;
+}
+
+.main-content > h1,
+.main-content h2 {
+  padding: 0 4rem;
+}
+
+.main-content > h1 {
+  margin-bottom: 1rem;
+}
+
+.main-content > h3 {
+  margin-top: 2.75rem;
+  font-family: var(--mrEaves);
+  font-size: 1.5625rem;
+  text-transform: uppercase;
+  color: var(--branco);
+}
+
+.main-content ul {
+  list-style: none;
+  max-width: 25.9375rem;
+  width: 100%;
+  margin: 0 auto;
+  counter-reset: section;
+  margin-top: 2.0625rem;
+  text-align: left;
+}
+
+.main-content ul li {
+  font-family: var(--mrModern);
+  color: var(--branco);
+  font-size: 1.5625rem;
+  font-weight: 300;
+  margin-bottom: 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.main-content ul li:before {
+  counter-increment: section;
+  content: counter(section);
+  position: absolute;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  left: -3.5rem;
+  border-radius: 50%;
+  margin-right: 3rem;
+  color: var(--branco);
+  font-size: 1.2rem;
+  font-weight: 300;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--branco);
+}
+
+a.btn {
+  background: #00e676;
+  text-decoration: none;
+  border-radius: 8.55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+  width: 411px;
+  height: 48px;
+  margin: 0 auto;
+  font-family: var(--mrEaves);
+  color: #38040d;
+}
+
+a.btn img {
+  margin-right: 5px;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --maxDesk: 21.25rem;
+  }
+  h1 {
+    font-size: 1.25rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.0625rem !important;
+  }
+
+  .main-content > h3 {
+    padding: 0 2rem;
+  }
+  .btn p {
+    font-size: 1rem;
+  }
+
+  .footerContent p {
+    font-size: 0.8125rem;
+  }
+
+  .logo {
+    width: 265px;
+    height: 186px;
+    background-size: contain;
+  }
+
+  .main-content {
+    overflow: hidden;
+  }
+  .main-content > h1,
+  .main-content h2 {
+    padding: unset;
+  }
+  .main-content h2 {
+    padding: 0 2rem;
+  }
+
+  .main-content ul li {
+    font-size: 1rem;
+    padding-right: 6rem;
+  }
+
+  .main-content ul {
+    position: relative;
+    left: 4rem;
+  }
+
+  a.btn {
+    font-size: 0.9375rem;
+    width: 289px;
+    height: 33.56px;
+  }
+
+  .main-content ul li:before {
+    width: 24.47px;
+    height: 24.47px;
+    left: -2.5rem;
+  }
+
+  main {
+    overflow-x: hidden;
+    background: url('../assets/jornadafundo.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 6rem;
+    overflow-y: hidden;
+  }
+}

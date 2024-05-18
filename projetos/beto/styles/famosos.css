@@ -1,0 +1,42 @@
+#famosos {
+  width: 100%;
+  background: var(--preto);
+}
+.famososContent {
+  grid-column: 1/13;
+  display: flex;
+  align-items: center;
+  padding: 0 43px;
+  justify-content: space-between;
+  padding: 73px 0;
+}
+
+.famososLeft {
+  color: var(--prata);
+  max-width: 36.25rem;
+  width: 100%;
+  padding-right: 1px;
+  position: relative;
+  left: 3rem;
+}
+.famososLeft p {
+  font-weight: 500;
+  line-height: 33.44px;
+}
+.famososLeft p:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 475px) {
+  .famososContent {
+    grid-column: 2/12;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 101px;
+  }
+  .famososLeft {
+    left: unset;
+    max-width: 18.0625rem;
+    margin-bottom: 48px;
+  }
+}

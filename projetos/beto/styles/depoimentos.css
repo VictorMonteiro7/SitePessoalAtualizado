@@ -1,0 +1,77 @@
+#depoimentos {
+  background: var(--preto);
+  width: 100%;
+}
+
+.depoimentosContent {
+  grid-column: 1/13;
+  padding-top: 98px;
+  padding-bottom: 224px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.depoimentosContent > h2 {
+  max-width: 35.4375rem;
+  width: 100%;
+  text-align: center;
+  color: var(--prata);
+  font-weight: 500;
+  margin-bottom: 121px;
+}
+
+.depoimentosArea {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.depoimento {
+  color: var(--prata);
+  max-width: 22.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.depoimentoVideo {
+  position: relative;
+  height: 15.375rem;
+  margin-top: 20px;
+}
+.depoimentoVideoArea {
+  position: relative;
+  width: 100%;
+  padding: 0 0 56.25%;
+}
+.depoimentoVideoArea video,
+.depoimentoVideoArea iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 475px) {
+  .depoimentosContent {
+    grid-column: 2/12;
+    padding-bottom: 163px;
+  }
+  .depoimentosArea {
+    grid-template-columns: 1fr;
+  }
+  .depoimentosContent {
+    padding-top: 42px;
+  }
+  .depoimentosContent > h2 {
+    padding: 0 2.1rem;
+    margin-bottom: 53px;
+  }
+  .depoimentoVideoArea video,
+  .depoimentoVideoArea iframe {
+    position: unset;
+  }
+}

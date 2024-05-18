@@ -1,0 +1,94 @@
+#depslide {
+  width: 100%;
+  padding-top: 14px;
+}
+.depslideContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slideContainer {
+  max-width: 805px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  flex-shrink: 0;
+}
+.slideContent {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out;
+}
+.slideContent img {
+  padding: 0 88px;
+}
+.slideContainer .navButton {
+  position: absolute;
+  cursor: pointer;
+}
+.slideContainer .navButton.prev {
+  left: 0;
+  z-index: 99;
+}
+.slideContainer .navButton.next {
+  right: 0;
+  z-index: 99;
+}
+.bolinhaArea {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 57px;
+  margin-top: 41px;
+  max-width: 465px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+.bolinha:first-child {
+  margin-bottom: 5px;
+}
+.bolinhaArea .bolinha {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #efc389;
+}
+.bolinhaArea .bolinha.ativo {
+  background: #000;
+}
+.bolinhaArea .bolinha:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media (max-width: 480px) {
+  .bolinhaArea {
+    max-width: 260px;
+  }
+  .bolinhaArea .bolinha {
+    width: 7.56px;
+    height: 7.56px;
+  }
+  .bolinha:nth-child(24) {
+    margin-bottom: 5px;
+  }
+  .slideContainer .navButton {
+    width: 38px;
+  }
+  .slideContainer {
+    max-width: 380.36px;
+  }
+  .slideContent {
+    width: 100%;
+  }
+  .bolinhaArea {
+    margin-top: 19px;
+  }
+  .slideContent img {
+    padding: unset;
+  }
+}

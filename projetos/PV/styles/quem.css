@@ -1,0 +1,57 @@
+#quem {
+  background: #c08d4c;
+  width: 100%;
+}
+.quemContainer {
+  width: 100%;
+}
+.quemContent {
+  display: flex;
+  max-width: 1024px;
+}
+.quemContent img {
+  display: block;
+}
+
+.quemContent .texto {
+  padding-top: 109px;
+}
+.quemContent .texto h1 {
+  font-family: var(--alana);
+  font-size: 48px;
+  color: #000;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.quemContent .texto p {
+  font-size: 21px;
+  line-height: 28.46px;
+  color: #000;
+}
+.quemContent .texto p:last-child {
+  margin-top: 2rem;
+}
+.quemContent .texto p span {
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .quemContent {
+    flex-direction: column-reverse;
+  }
+  .quemContent .texto {
+    padding-top: 32px;
+  }
+  .quemContent .texto h1 {
+    text-align: center;
+    font-size: 42.31px;
+  }
+  .quemContent .texto p {
+    font-size: 19px;
+    line-height: 25.75px;
+    text-align: center;
+  }
+  .quemContent .texto p:last-child {
+    padding: 0 9px;
+  }
+}

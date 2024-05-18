@@ -1,0 +1,27 @@
+#commeu {
+  width: 100%;
+  background: #c08d4c;
+  padding: 62px 0 74px 0;
+}
+
+.commeuContainer {
+  width: 100%;
+}
+.commeuContainer p {
+  max-width: 616px;
+  width: 100%;
+  color: #000;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+  line-height: 30.02px;
+}
+@media (max-width: 480px) {
+  #commeu {
+    padding: 35px 0 42px 0;
+  }
+  .commeuContainer p {
+    font-weight: 700;
+    line-height: 24.8px;
+  }
+}

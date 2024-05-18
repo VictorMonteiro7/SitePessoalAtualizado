@@ -1,0 +1,88 @@
+#depoimentos {
+  width: 100%;
+  height: 100%;
+  background: #c08d4c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.depoimentosContainer {
+  max-width: 1130px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+.depoimentosContainer > h1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: #000;
+}
+.depoimentosContainer > h1:after {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  width: 40%;
+  height: 1px;
+  background: currentColor;
+}
+.areaDepoimentos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: inherit;
+  width: 100%;
+  margin-top: 128px;
+}
+.videoArea {
+  max-width: 533px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 74px;
+}
+.videoArea p {
+  max-width: 351px;
+  width: 100%;
+  text-align: center;
+  margin: 30px auto 0;
+  font-style: italic;
+  color: #000;
+}
+.videoContainer {
+  padding: 0 0 56.25%;
+  position: relative;
+}
+.videoContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .depoimentosContainer {
+    margin-top: 41px;
+  }
+  .depoimentosContainer > h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .depoimentosContainer > h1:after {
+    bottom: -25%;
+  }
+  .areaDepoimentos {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+    margin-top: 50px;
+  }
+  .videoArea {
+    margin-bottom: 51px;
+  }
+}

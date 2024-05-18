@@ -1,0 +1,80 @@
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#modal.ativo {
+  display: flex;
+}
+#modal > div {
+  display: flex;
+  max-width: 640px;
+  width: 100%;
+  flex-direction: column;
+  background: #fff;
+  padding: 50px;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+#modal > div h1 {
+  color: var(--vinho);
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+#modal > div form {
+  max-width: 532px;
+  width: 100%;
+  margin-top: 1rem;
+}
+#modal > div form p {
+  font-size: 18px;
+  color: rgb(122, 122, 122);
+  margin: 0.7rem 0;
+  cursor: pointer;
+}
+#modal > div form input {
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 2px rgb(194, 130, 87);
+  outline: none;
+  font-family: var(--Montserrat);
+}
+#modal > div form button {
+  background: rgb(194, 130, 87);
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 1rem;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  #modal {
+    align-items: center;
+  }
+  #modal > div {
+    padding: 15px;
+    justify-content: center;
+    width: 90%;
+  }
+  #modal > div h1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 1rem;
+  }
+}

@@ -1,0 +1,81 @@
+#dinheiro {
+  width: 100%;
+  position: relative;
+}
+#dinheiro > picture img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  display: block;
+}
+.dinheiroContainer {
+  width: 100%;
+  z-index: 2;
+}
+.dinheiro.flex {
+  justify-content: space-between;
+}
+.dinheiroLeft {
+  padding-top: 6.25rem;
+  max-width: 35.625rem;
+  width: 100%;
+}
+.dinheiroLeft h2:first-child {
+  margin-bottom: 1.25rem;
+  padding-right: 1rem;
+}
+.dinheiroLeft h2:not(:first-child) {
+  font-family: var(--Roboto);
+  font-weight: 400;
+  max-width: 26.8125rem;
+  margin-bottom: 2.125rem;
+}
+
+.dinheiroLeft a.btn.laranja {
+  margin-bottom: 6.25rem;
+}
+
+.dinheiroRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dinheiroRight picture img {
+  max-width: 28.125rem;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  #dinheiro {
+    padding-bottom: 110px;
+  }
+  #dinheiro > picture {
+    display: none;
+  }
+  .dinheiroLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dinheiroLeft h2:first-child {
+    font-size: 1.125rem;
+    text-align: center;
+    line-height: 30.6px;
+    margin-right: unset;
+    padding: 0 1rem;
+  }
+  .dinheiroLeft h2:not(:first-child) {
+    font-size: 0.9375rem;
+    line-height: 25.5px;
+    font-weight: 400;
+    max-width: 20.875rem;
+    margin-bottom: 25.5px;
+  }
+  .dinheiroLeft a.btn.laranja {
+    margin-bottom: 3.125rem;
+  }
+  .dinheiroLeft {
+    padding-top: 60px;
+  }
+}
